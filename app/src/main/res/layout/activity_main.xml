@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.r3pwn.swearjar.MainActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/jarTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your jar:" />
+
+    <TextView
+        android:id="@+id/jarAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jarTitle"
+        android:text="$0.00"
+        android:textColor="#000000"
+        android:textSize="50dp" />
+
+    <Switch
+        android:id="@+id/serviceSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Enable Service" />
+
+    <Button
+        android:id="@+id/donateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jarAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Donate it!" />
+</RelativeLayout>
